@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.6)), url(image/currency_image.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    width: 320px;
+    height: auto;
+    /* margin: 100px auto 0; */
+    margin: auto;
+    border-radius: 20px;
+    background-color: #232323;
+    box-shadow: -3px -3px 3px rgba(0,0,0,.7);
+    padding: 20px;
+}
+
+.main .heading {
+    margin: 15px 0 25px 0;
+}
+
+.main .heading h1 {
+    font-size: 24px;
+    color: #59bad8;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+.main .heading h1::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background: #59bad8;
+    width: 70px;
+    height: 3px;
+}
+label {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.from {
+    margin-bottom: 10px;
+    background-color: #dde1e7;
+}
+
+.to {
+    background-color: #dde1e7;
+}
+
+#amount-box {
+    background-color: #dde1e7;
+}
+
+.button {
+    margin: 25px 0;
+}
+
+.btn {
+    width: 100%;
+    background-color: #1e4552;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background-color: rgb(43, 94, 141);
+    color: #fff;
+}
+
+#finalAmount {
+    margin-top: 30px;
+    display: none;
+}
+
+#finalAmount h2 {
+    font-size: 18px;
+    color: #59bad8;
+    font-weight: bold;
+}
+.finalValue{
+    color: #fff;
+}
+
+@media (max-width:350px){
+    .main{
+        width: 270px;
+    }
+    #finalAmount h2 {
+    font-size: 15px;
+   
+}
+}
+
